@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EducaKids</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>EducaKids</h1>
+        <p>¡Bienvenidos a EducaKids! Una plataforma educativa para niños.</p>
+    </header>
+
+    <section>
+        <h2>Video de bienvenida</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/watch?v=bJpqF2AcB2U&ab_channel=LevyRinc%C3%B3n" 
+            title="Video de bienvenida" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+    <section>
+        <h2>Selecciona la edad del niño</h2>
+        <form action="preguntas.html" method="GET">
+            <label for="edad">Edad:</label>
+            <select id="edad" name="edad" required>
+                <option value="">Selecciona la edad</option>
+                <option value="0-1">0 dias a 1 mes</option>
+                <option value="1-3">1 mes 1 dia a 3 meses 0 dias</option>
+                <option value="3-6">3 meses 1 dia a 6 meses 0 dias</option>
+                <option value="6-9">6 meses 1 dia a 9 meses 0 dias</option>
+                <option value="9-12">9 meses 1 dia a 12 meses 0 dias</option>
+                <option value="12-18">12 meses 1 dia a 18 meses 0 dias</option>
+                <option value="18-24">18 meses 1 dia a 24 meses 0 dias</option>
+                <option value="2-3">2 a 3 años</option>
+                <option value="3-4">3 a 4 años</option>
+                <option value="4-5">4 a 5 años</option>
+            </select>
+            <br><br>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+</body>
+</html>

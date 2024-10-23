@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuestionario EducaKids</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Cuestionario para EducaKids</h1>
+    </header>
+
+    <section id="formulario-preguntas">
+        <h2>Responde las siguientes preguntas</h2>
+        <form id="preguntas-formulario">
+            <!-- Preguntas generadas dinámicamente aquí -->
+        </form>
+        <button onclick="guardarRespuestas()">Guardar</button>
+    </section>
+
+    <section id="resultado" style="display: none;">
+        <h2>Resultados y Video</h2>
+        <ul id="respuestas-lista">
+            <!-- Respuestas generadas dinámicamente aquí -->
+        </ul>
+        <iframe id="video-final" width="560" height="315" src="" 
+            title="Video final" frameborder="0" allowfullscreen></iframe>
+        <br><br>
+        <button onclick="window.location.href='index.html'">Volver al Inicio</button>
+    </section>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const edad = params.get('edad');
+        const preguntasFormulario = document.getElementById('preguntas-formulario');
+        const respuestasLista = document.getElementById('respuestas-lista');
+        const videoFinal = document.getElementById('video-final');
+        const resultadoSection = document.getElementById('resultado');
+
+        let preguntas = [];
+
+        if (edad === '0-1') {
+            preguntas = [
+                { texto: '¿Te gusta dibujar?',           img: '/imagen1.jpg', observacion: 'Dibujar ayuda a desarrollar la creatividad.' },
+                { texto: '¿Te gusta jugar con muñecos?', img: '/imagen2.jpg', observacion: 'Jugar con muñecos promueve la empatía y el juego simbólico.' },
+                { texto: '¿Te gusta jugar con muñecos?', img: '/imagen2.jpg', observacion: 'Jugar con muñecos promueve la empatía y el juego simbólico.' },
+                { texto: '¿Te gusta jugar con muñecos?', img: '/imagen2.jpg', observacion: 'Jugar con muñecos promueve la empatía y el juego simbólico.' },
+                { texto: '¿Te gusta jugar con muñecos?', img: '/imagen2.jpg', observacion: 'Jugar con muñecos promueve la empatía y el juego simbólico.' },
+                { texto: '¿Te gusta jugar con muñecos?', img: '/imagen2.jpg', observacion: 'Jugar con muñecos promueve la empatía y el juego simbólico.' }
+            ];
+        } else if (edad === '1-3') {
+            preguntas = [
+                { texto: '¿Te gusta leer cuentos?',  img: '/imagen3.jpg', observacion: 'Leer cuentos fomenta el amor por la lectura.' },
+                { texto: '¿Te gustan los animales?', img: '/imagen4.jpg', observacion: 'El cuidado de los animales promueve la responsabilidad.' },
+                { texto: '¿Te gustan los animales?', img: '/imagen4.jpg', observacion: 'El cuidado de los animales promueve la responsabilidad.' },
+                { texto: '¿Te gustan los animales?', img: '/imagen4.jpg', observacion: 'El cuidado de los animales promueve la responsabilidad.' },
+                { texto: '¿Te gustan los animales?', img: '/imagen4.jpg', observacion: 'El cuidado de los animales promueve la responsabilidad.' },
+                { texto: '¿Te gustan los animales?', img: '/imagen4.jpg', observacion: 'El cuidado de los animales promueve la responsabilidad.' }
+            ];
+        } else if (edad === '3-6') {
+            preguntas = [
+                { texto: '¿Te gusta jugar deportes?',   img: '/imagen5.jpg', observacion: 'Los deportes son buenos para la salud física y mental.' },
+                { texto: '¿Te gustan las matemáticas?', img: '/imagen6.jpg', observacion: 'Las matemáticas mejoran el razonamiento lógico.' },
+                { texto: '¿Te gustan las matemáticas?', img: '/imagen6.jpg', observacion: 'Las matemáticas mejoran el razonamiento lógico.' },
+                { texto: '¿Te gustan las matemáticas?', img: '/imagen6.jpg', observacion: 'Las matemáticas mejoran el razonamiento lógico.' },
+                { texto: '¿Te gustan las matemáticas?', img: '/imagen6.jpg', observacion: 'Las matemáticas mejoran el razonamiento lógico.' },
+                { texto: '¿Te gustan las matemáticas?', img: '/imagen6.jpg', observacion: 'Las matemáticas mejoran el razonamiento lógico.' }
+            ];
+        }else if (edad === '6-9') {
+            preguntas = [
+                { texto: '¿Te gusta jugar deportes?',   img: '/imagen5.jpg', observacion: 'Los deportes son buenos para la salud física y mental.' },
+                { texto: '¿Te gustan las matemáticas?', img: '/imagen6.jpg', observacion: 'Las matemáticas mejoran el razonamiento lógico.' },
+                { texto: '¿Te gustan las matemáticas?', img: '/imagen6.jpg', observacion: 'Las matemáticas mejoran el razonamiento lógico.' },
+                { texto: '¿Te gustan las matemáticas?', img: '/imagen6.jpg', observacion: 'Las matemáticas mejoran el razonamiento lógico.' },
+                { texto: '¿Te gustan las matemáticas?', img: '/imagen6.jpg', observacion: 'Las matemáticas mejoran el razonamiento lógico.' },
+                { texto: '¿Te gustan las matemáticas?', img: '/imagen6.jpg', observacion: 'Las matemáticas mejoran el razonamiento lógico.' }
+            ];
+        }else if (edad === '9-12') {
+            preguntas = [
+                { texto: '¿Te gusta jugar deportes?',   img: '/imagen5.jpg', observacion: 'Los deportes son buenos para la salud física y mental.' },
+                { texto: '¿Te gustan las matemáticas?', img: '/imagen6.jpg', observacion: 'Las matemáticas mejoran el razonamiento lógico.' },
+                { texto: '¿Te gustan las matemáticas?', img: '/imagen6.jpg', observacion: 'Las matemáticas mejoran el razonamiento lógico.' },
+                { texto: '¿Te gustan las matemáticas?', img: '/imagen6.jpg', observacion: 'Las matemáticas mejoran el razonamiento lógico.' },
+                { texto: '¿Te gustan las matemáticas?', img: '/imagen6.jpg', observacion: 'Las matemáticas mejoran el razonamiento lógico.' },
+                { texto: '¿Te gustan las matemáticas?', img: '/imagen6.jpg', observacion: 'Las matemáticas mejoran el razonamiento lógico.' }
+            ];
+        }else if (edad === '12-18') {
+            preguntas = [
+                { texto: '¿Te gusta jugar deportes?',   img: '/imagen5.jpg', observacion: 'Los deportes son buenos para la salud física y mental.' },
+                { texto: '¿Te gustan las matemáticas?', img: '/imagen6.jpg', observacion: 'Las matemáticas mejoran el razonamiento lógico.' },
+                { texto: '¿Te gustan las matemáticas?', img: '/imagen6.jpg', observacion: 'Las matemáticas mejoran el razonamiento lógico.' },
+                { texto: '¿Te gustan las matemáticas?', img: '/imagen6.jpg', observacion: 'Las matemáticas mejoran el razonamiento lógico.' },
+                { texto: '¿Te gustan las matemáticas?', img: '/imagen6.jpg', observacion: 'Las matemáticas mejoran el razonamiento lógico.' },
+                { texto: '¿Te gustan las matemáticas?', img: '/imagen6.jpg', observacion: 'Las matemáticas mejoran el razonamiento lógico.' }
+            ];
+        }else if (edad === '18-24') {
+            preguntas = [
+                { texto: '¿Te gusta jugar deportes?',   img: '/imagen5.jpg', observacion: 'Los deportes son buenos para la salud física y mental.' },
+                { texto: '¿Te gustan las matemáticas?', img: '/imagen6.jpg', observacion: 'Las matemáticas mejoran el razonamiento lógico.' },
+                { texto: '¿Te gustan las matemáticas?', img: '/imagen6.jpg', observacion: 'Las matemáticas mejoran el razonamiento lógico.' },
+                { texto: '¿Te gustan las matemáticas?', img: '/imagen6.jpg', observacion: 'Las matemáticas mejoran el razonamiento lógico.' },
+                { texto: '¿Te gustan las matemáticas?', img: '/imagen6.jpg', observacion: 'Las matemáticas mejoran el razonamiento lógico.' },
+                { texto: '¿Te gustan las matemáticas?', img: '/imagen6.jpg', observacion: 'Las matemáticas mejoran el razonamiento lógico.' }
+            ];
+        }else if (edad === '2-3') {
+            preguntas = [
+                { texto: '¿Te gusta jugar deportes?',   img: '/imagen5.jpg', observacion: 'Los deportes son buenos para la salud física y mental.' },
+                { texto: '¿Te gustan las matemáticas?', img: '/imagen6.jpg', observacion: 'Las matemáticas mejoran el razonamiento lógico.' },
+                { texto: '¿Te gustan las matemáticas?', img: '/imagen6.jpg', observacion: 'Las matemáticas mejoran el razonamiento lógico.' },
+                { texto: '¿Te gustan las matemáticas?', img: '/imagen6.jpg', observacion: 'Las matemáticas mejoran el razonamiento lógico.' },
+                { texto: '¿Te gustan las matemáticas?', img: '/imagen6.jpg', observacion: 'Las matemáticas mejoran el razonamiento lógico.' },
+                { texto: '¿Te gustan las matemáticas?', img: '/imagen6.jpg', observacion: 'Las matemáticas mejoran el razonamiento lógico.' }
+            ];
+        }else if (edad === '3-4') {
+            preguntas = [
+                { texto: '¿Te gusta jugar deportes?',   img: '/imagen5.jpg', observacion: 'Los deportes son buenos para la salud física y mental.' },
+                { texto: '¿Te gustan las matemáticas?', img: '/imagen6.jpg', observacion: 'Las matemáticas mejoran el razonamiento lógico.' },
+                { texto: '¿Te gustan las matemáticas?', img: '/imagen6.jpg', observacion: 'Las matemáticas mejoran el razonamiento lógico.' },
+                { texto: '¿Te gustan las matemáticas?', img: '/imagen6.jpg', observacion: 'Las matemáticas mejoran el razonamiento lógico.' },
+                { texto: '¿Te gustan las matemáticas?', img: '/imagen6.jpg', observacion: 'Las matemáticas mejoran el razonamiento lógico.' },
+                { texto: '¿Te gustan las matemáticas?', img: '/imagen6.jpg', observacion: 'Las matemáticas mejoran el razonamiento lógico.' }
+            ];
+        }else if (edad === '4-5') {
+            preguntas = [
+                { texto: '¿Te gusta jugar deportes?',   img: '/imagen5.jpg', observacion: 'Los deportes son buenos para la salud física y mental.' },
+                { texto: '¿Te gustan las matemáticas?', img: '/imagen6.jpg', observacion: 'Las matemáticas mejoran el razonamiento lógico.' },
+                { texto: '¿Te gustan las matemáticas?', img: '/imagen6.jpg', observacion: 'Las matemáticas mejoran el razonamiento lógico.' },
+                { texto: '¿Te gustan las matemáticas?', img: '/imagen6.jpg', observacion: 'Las matemáticas mejoran el razonamiento lógico.' },
+                { texto: '¿Te gustan las matemáticas?', img: '/imagen6.jpg', observacion: 'Las matemáticas mejoran el razonamiento lógico.' },
+                { texto: '¿Te gustan las matemáticas?', img: '/imagen6.jpg', observacion: 'Las matemáticas mejoran el razonamiento lógico.' }
+            ];
+        }
+
+        preguntas.forEach((pregunta, index) => {
+            const div = document.createElement('div');
+            const label = document.createElement('label');
+            label.textContent = pregunta.texto;
+            const img = document.createElement('img');
+            img.src = pregunta.img;
+            img.alt = pregunta.texto;
+
+            const inputSi = document.createElement('input');
+            inputSi.type = 'radio';
+            inputSi.name = 'pregunta' + index;
+            inputSi.value = 'Si';
+            inputSi.required = true;
+
+            const inputNo = document.createElement('input');
+            inputNo.type = 'radio';
+            inputNo.name = 'pregunta' + index;
+            inputNo.value = 'No';
+
+            const labelSi = document.createElement('label');
+            labelSi.textContent = 'Sí';
+            const labelNo = document.createElement('label');
+            labelNo.textContent = 'No';
+
+            div.appendChild(img);
+            div.appendChild(label);
+            div.appendChild(labelSi);
+            div.appendChild(inputSi);
+            div.appendChild(labelNo);
+            div.appendChild(inputNo);
+            preguntasFormulario.appendChild(div);
+        });
+
+        function guardarRespuestas() {
+            const respuestas = [];
+            preguntas.forEach((pregunta, index) => {
+                const respuesta = document.querySelector(`input[name="pregunta${index}"]:checked`).value;
+                respuestas.push({ pregunta: pregunta.texto, respuesta: respuesta, observacion: respuesta === 'No' ? pregunta.observacion : '' });
+            });
+
+            respuestas.forEach(respuesta => {
+                const li = document.createElement('li');
+                li.textContent = `${respuesta.pregunta}: ${respuesta.respuesta}`;
+                respuestasLista.appendChild(li);
+
+                if (respuesta.observacion) {
+                    const observacion = document.createElement('p');
+                    observacion.textContent = `Observación: ${respuesta.observacion}`;
+                    respuestasLista.appendChild(observacion);
+                }
+            });
+
+            if (edad === '0-1') {
+                videoFinal.src = 'https://www.youtube.com/embed/VIDEO_ID_34';
+            } else if (edad === '1-3') {
+                videoFinal.src = 'https://www.youtube.com/embed/VIDEO_ID_56';
+            } else if (edad === '3-6') {
+                videoFinal.src = 'https://www.youtube.com/embed/VIDEO_ID_78';
+            } else if (edad === '6-9') {
+                videoFinal.src = 'https://www.youtube.com/embed/VIDEO_ID_78';
+            } else if (edad === '9-12') {
+                videoFinal.src = 'https://www.youtube.com/embed/VIDEO_ID_78';
+            } else if (edad === '12-18') {
+                videoFinal.src = 'https://www.youtube.com/embed/VIDEO_ID_78';
+            } else if (edad === '18-24') {
+                videoFinal.src = 'https://www.youtube.com/embed/VIDEO_ID_78';
+            } else if (edad === '2-3') {
+                videoFinal.src = 'https://www.youtube.com/embed/VIDEO_ID_78';
+            } else if (edad === '3-4') {
+                videoFinal.src = 'https://www.youtube.com/embed/VIDEO_ID_78';
+            } else if (edad === '4-5') {
+                videoFinal.src = 'https://www.youtube.com/embed/VIDEO_ID_78';
+            }
+            
+
+            document.getElementById('formulario-preguntas').style.display = 'none';
+            resultadoSection.style.display = 'block';
+        }
+    </script>
+</body>
+</html>

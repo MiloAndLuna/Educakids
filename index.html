@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EducaKids</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="text-center">Bienvenido a EducaKids</h1>
+    <p class="text-center">Ayudamos a monitorear el desarrollo de tu niño.</p>
+    
+    <!-- Video de YouTube -->
+    <div class="video-responsive">
+        <iframe width="560" height="315" 
+		src="https://www.youtube.com/embed/rreBS5xILtg?si=JIY190LsGZC4WGz6" 
+		title="YouTube video player" 
+		frameborder="0" 
+		allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+		referrerpolicy="strict-origin-when-cross-origin" 
+		allowfullscreen>
+	</iframe>
+    </div>
+    
+    <!-- Pregunta sobre prematuridad -->
+    <div>
+        <label for="prematuro">¿Su niño es prematuro y menor de dos años?</label><br>
+        <input type="radio" id="si" name="prematuro" value="si" checked> Sí
+        <input type="radio" id="no" name="prematuro" value="no"> No
+    </div>
+    
+    <!-- Mensaje de calculadora de edad corregida -->
+    <div id="prematuro-link" style="display: block;">
+        <p>Por favor, calcule la edad corregida en este <a href="https://www.embarazoymas.net/calculadora-de-edad-corregida-prematuros" target="_blank">enlace</a>, <br>una vez lo haga regrese a esta pagina seleccione NO de la pregunta si su niño es prematuro <br>y escoja el rango correcto de edad donde se ubica su niño.</p>
+    </div>
+    
+    <!-- Menú para ingresar la edad -->
+    <div id="edad-section" style="display: none;">
+        <label for="edad">Seleccione la edad del niño:</label>
+        <select id="edad">
+            <option value="">Seleccione la edad</option>
+            <option name="0-1"   value="1">0 días a 1 mes 0 días</option>
+            <option name="1-3"   value="2">1 mes 1 día a 3 meses 0 días</option>
+            <option name="3-6"   value="3">3 meses 1 día a 6 meses 0 días</option>
+			<option name="6-9"   value="4">6 meses 1 día a 9 meses 0 días</option>
+			<option name="9-12"  value="5">9 meses 1 día a 12 meses 0 días</option>
+			<option name="12-18" value="6">12 meses 1 día a 18 meses 0 días</option>
+			<option name="18-24" value="7">18 meses 1 día a 24 meses 0 días</option>
+			<option name="2-3"   value="8">2 a 3 años</option>
+			<option name="3-4"   value="9">3 a 4 años</option>
+			<option name="4-5"   value="10">4 a 5 años</option>
+            <!-- Agregar más opciones según las edades -->
+        </select>
+    </div>
+
+    <button id="enviar" class="btn btn-primary">Enviar</button>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
