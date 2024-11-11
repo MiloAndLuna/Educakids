@@ -256,7 +256,7 @@ if (window.location.pathname.endsWith("preguntas.html")) {
       {
         texto:
           "Cuando usted le pide a su bebé venir rápido hacia usted como si corriera…¿Él es capaz de hacerlo?",
-        imagen: ["imagenes/7.1.jpg"],
+        imagen: ["imagenes/7,1.jpg"],
         observacion: "Capacidad para correr",
       },
       {
