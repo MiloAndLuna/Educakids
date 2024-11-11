@@ -44,37 +44,37 @@ if (window.location.pathname.endsWith("preguntas.html")) {
     1: [
       {
         texto:
-          "Si usted acaricia la comisura de los labios de su bebé…¿él gira la cabeza hacia el mismo lado e inicia un movimiento de succión con sus labios?",
+          "Si usted toca los labios de su bebé en las esquinas, ¿él gira la cabeza hacia ese lado y empieza a mover los labios?",
         imagen: ["imagenes/1.1.jpg", "imagenes/1,1.jpg"],
         observacion: "Ausencia de reflejo de búsqueda y succión",
       },
       {
         texto:
-          "Cuando usted cambia a su bebé desde la posición sostenido en sus brazos a la cama…¿su bebé hace apertura de sus brazos al mismo tiempo?",
+          "Cuando usted pasa a su bebé de sus brazos a la cama, ¿él abre los brazos al mismo tiempo?",
         imagen: ["imagenes/1.2.jpg"],
         observacion: "Ausencia del reflejo de moro simétrico",
       },
       {
         texto:
-          "Si usted acuesta boca arriba a su bebé y le habla de manera suave o lo toca…¿él mueve sus brazos y piernas?",
+          "Cuando usted pone a su bebé boca arriba y le habla suave o lo toca, ¿él mueve sus brazos y piernas?",
         imagen: ["imagenes/1.3.jpg"],
         observacion: "Alteración en la movilidad de extremidades",
       },
       {
         texto:
-          "Cuando usted toca la palma de la mano de su bebé…¿él le aprieta con su mano?",
+          "Si usted toca la palma de la mano de su bebé, ¿él aprieta su mano?",
         imagen: ["imagenes/1.4.jpg"],
         observacion: "Ausencia del reflejo de prensión palmar",
       },
       {
         texto:
-          "Si usted se ubica cerca al alcance visual de su bebé y realiza sonidos con sonaja, aplausos y/o alumbra con alguna luz el entorno alrededor del bebé…¿él reacciona con un movimiento o sonido?",
+          "Si usted se acerca a su bebé y hace sonidos con una sonaja, aplaude o enciende una luz cerca de él, ¿el bebé se mueve o hace algún sonido?",
         imagen: ["imagenes/1.5.jpg"],
         observacion: "Ausencia de reacción ante luz y sonidos",
       },
       {
         texto:
-          "Cuando usted pone un objeto frente a su bebé y lo mueve de manera horizontal de lado a lado…¿Su bebé puede seguir el objeto con la mirada?",
+          "Cuando usted mueve un objeto de un lado a otro frente a su bebé, ¿él puede seguirlo con la mirada?",
         imagen: ["imagenes/1.6.jpg"],
         observacion:
           "Alteración en el seguimiento de objetos de manera horizontal",
@@ -83,38 +83,38 @@ if (window.location.pathname.endsWith("preguntas.html")) {
     2: [
       {
         texto:
-          "Si usted toma a su bebé de sus manos mientras él está acostado boca arriba y lo hala como si tratará de sentarlo…¿él conserva la posición de su cabeza de manera autónoma?",
+          "Si usted agarra a su bebé de las manos mientras está acostado boca arriba y lo hala suavemente para sentarlo, ¿él puede mantener la cabeza en su lugar solo?",
         imagen: ["imagenes/2.1.jpg"],
         observacion: "Ausencia del sostén de cabeza",
       },
       {
         texto:
-          "Cuando su bebé está acostado boca abajo y usted lo estimula mirándolo desde arriba…¿él bebé logra apoyarse en sus antebrazos, levanta la cabeza y el pecho al menos 3 segundos para mirarlo?",
+          "Cuando su bebé está boca abajo y usted lo mira desde arriba, ¿él puede apoyarse en los brazos y levantar la cabeza y el pecho por al menos 3 segundos para mirarlo?",
         imagen: ["imagenes/2.2.jpg"],
         observacion:
           "Ausencia de la capacidad de levantar la cabeza y pecho estando boca abajo",
       },
       {
         texto:
-          "Si su bebé está acostado boca arriba y usted hace un sonido para estimular ¿él gira su cabeza en busca del sonido?",
+          "Si su bebé está boca arriba y usted hace un sonido, ¿él gira la cabeza para buscar de dónde viene?",
         imagen: ["imagenes/2.3.jpg"],
         observacion: "Ausencia de giro de cabeza desde la línea media",
       },
       {
         texto:
-          "¿Cuándo su bebé está acostado boca arriba mira sus manos mientras las mueve?",
+          "¿Cuando su bebé está acostado boca arriba mira sus manos mientras las mueve?",
         imagen: ["imagenes/2.4.jpg"],
         observacion: "Ausencia de abrir y mirar sus manos",
       },
       {
         texto:
-          "Si usted le pasa un objeto liviano a su bebé…¿él lo coge por al menos 3 segundos?",
+          "Si usted le pasa un objeto liviano a su bebé…¿él lo agarra por al menos 3 segundos?",
         imagen: ["imagenes/2.5.jpg"],
         observacion: "Ausencia de sostén de objetos",
       },
       {
         texto:
-          "De acuerdo a la pregunta anterior…¿Su bebé intenta llevar el objeto a la boca?",
+          "Después de agarrar el objeto, ¿su bebé intenta llevarlo a la boca?",
         imagen: ["imagenes/2.6.jpg"],
         observacion: "Dificultad para llevar el objeto a la boca",
       },
@@ -122,19 +122,19 @@ if (window.location.pathname.endsWith("preguntas.html")) {
     3: [
       {
         texto:
-          "Si usted pone a su bebé en posición sentada mientras le brinda sostén con sus manos en la espalda…¿él sostiene su cabeza sin apoyo?",
+          "Si usted sienta a su bebé y lo sostiene por la espalda, ¿él puede mantener su cabeza sin apoyo?",
         imagen: ["imagenes/3.1.jpg"],
         observacion: "Sostén de cabeza sin apoyo en posición de sentado",
       },
       {
         texto:
-          "Conservando la posición anterior con su apoyo…¿si usted retira el apoyo de la espalda de su bebé de manera momentánea, él logra conservar esa posición al menos 3 segundos?",
+          "En la misma posición, si usted le quita el apoyo de la espalda por un momento, ¿su bebé puede mantenerse sentado por al menos 3 segundos?",
         imagen: ["imagenes/3.2.jpg"],
         observacion: "Posición de sentado momentáneamente",
       },
       {
         texto:
-          "Si su bebé está en la cama boca abajo y usted lo llama desde una posición en la que no lo vea…¿su bebé se gira tratando de buscar el sonido?",
+          "Si su bebé está boca abajo en la cama y usted lo llama desde un lugar donde él no lo ve, ¿intenta girarse para buscarlo?",
         imagen: ["imagenes/3.3.jpg"],
         observacion: "Se voltea",
       },
@@ -146,12 +146,12 @@ if (window.location.pathname.endsWith("preguntas.html")) {
       },
       {
         texto:
-          "Si conserva el objeto en su mano…¿él bebé trata de retenerlo para que no se lo quiten?",
+          "Si su bebé tiene un objeto en la mano, ¿intenta agarrarlo fuerte para que no se lo quiten?",
         imagen: ["imagenes/3.5.jpg"],
         observacion: "Capacidad de retener un objeto",
       },
       {
-        texto: "Su bebé es capaz de pasar un objeto de una mano a otra?",
+        texto: "¿Su bebé es capaz de pasar un objeto de una mano a otra?",
         imagen: ["imagenes/3.6.jpg"],
         observacion: "Facilidad en el movimiento de objetos",
       },
@@ -169,25 +169,25 @@ if (window.location.pathname.endsWith("preguntas.html")) {
       },
       {
         texto:
-          "Si su bebé está en posición acostado boca abajo y usted le pone un objeto llamativo al frente…¿él puede arrastrarse intentando llegar al objeto?",
+          "Si su bebé está boca abajo y usted pone un objeto llamativo al frente, ¿puede arrastrarse para alcanzarlo?",
         imagen: ["imagenes/4.3.jpg", "imagenes/4,3.jpg"],
         observacion: "Capacidad de arrastre y agarre de objetos",
       },
       {
         texto:
-          "Cuando usted le ofrece dos objetos llamativos a su bebé…¿él es capaz de cogerlos y sostenerlos sin soltarlos al menos 5 segundos?",
-        imagen: ["imagenes/4.4.jpg"],
+          "Cuando usted le da dos objetos llamativos a su bebé, ¿puede agarrarlos y sostenerlos sin soltarlos por al menos 5 segundos?",
+        imagen: ["imagenes/4.4pg"],
         observacion: "Sostén de objetos",
       },
       {
         texto:
-          "¿Si su bebé sostiene un objeto en su mano es capaz de soltarlo para tomar otro objeto que le interese más?",
+          "Si su bebé tiene un objeto en la mano, ¿puede soltarlo para agarrar otro?",
         imagen: ["imagenes/4.5.jpg"],
         observacion: "Selección de objetos",
       },
       {
         texto:
-          "¿Su bebé al coger objetos pequeños puede tomarlos con pulgar e índice?",
+          "¿Su bebé puede agarrar objetos pequeños usando el pulgar y el índice?",
         imagen: ["imagenes/4.6.jpg"],
         observacion: "Ejecución de movimientros finos formando la pinza",
       },
@@ -195,37 +195,36 @@ if (window.location.pathname.endsWith("preguntas.html")) {
     5: [
       {
         texto:
-          "¿Cuando su bebé está en posición acostado boca abajo y usted le pone un objeto llamativo al frente…¿él puede desplazarse gateando?",
+          "Si su bebé está boca abajo y usted pone un objeto llamativo al frente, ¿puede gatear hacia él?",
         imagen: ["imagenes/5.1.jpg"],
         observacion: "Habilidad de gateo",
       },
       {
         texto:
-          "¿Su bebé puede pasar de sentado a posición de pie apoyándose en un objeto cercano?",
-        imagen: ["imagenes/5.2.jpg"],
+          "¿Su bebé puede pasar de estar sentado a ponerse de pie usando un objeto cerca?",
+        imagen: ["imagenes/5.2pg"],
         observacion: "Adaptarse a la postura de pie",
       },
       {
         texto:
-          "Si usted posiciona a su bebé de pie y lo suelta… ¿Él es capaz de mantenerse sin apoyo al menos 2 segundos?",
+          "Si usted coloca a su bebé de pie y lo suelta, ¿puede mantenerse sin apoyo por al menos 2 segundos?",
         imagen: ["imagenes/5.3.jpg"],
         observacion: "Da pasos",
       },
       {
         texto:
-          "Cuando  su bebé tiene un objeto en cada mano y usted le ofrece un tercero pequeño…¿él es capaz de conservar los tres objetos en sus manos al menos 3 segundos?",
+          "Cuando su bebé tiene un objeto en cada mano y usted le da un tercero, ¿puede sostener los tres por al menos 3 segundos?",
         imagen: ["imagenes/5.4.jpg"],
         observacion: "Sostén de objetos",
       },
       {
         texto:
-          "Al dejar sentado a su bebé frente a una canastilla con objetos interesantes para él…¿él es capaz de sacar objetos de esta?",
+          "Si usted deja sentado a su bebé frente a una canasta con objetos interesantes para él…¿él es capaz de sacar objetos de esta?",
         imagen: ["imagenes/5.5.jpg"],
         observacion: "Saca y busca objetos",
       },
       {
-        texto:
-          "Cuando usted esconde un juguete de su hijo…¿Él es capaz de buscarlo?",
+        texto: "Al esconder un juguete de su hijo…¿Él es capaz de buscarlo?",
         imagen: ["imagenes/5.6.jpg"],
         observacion: "Búsqueda de objetos",
       },
@@ -233,37 +232,37 @@ if (window.location.pathname.endsWith("preguntas.html")) {
     6: [
       {
         texto:
-          "Si usted juega con su hijo a construir torres con cubos…¿él es capaz de al menos hacer una torre de tres cubos?",
+          "Si usted juega con su hijo a construir torres con cubos…¿él puede hacer una torre de tres cubos?",
         imagen: ["imagenes/6.1.jpg"],
         observacion: "Habilidad para armar torre de tres cubos",
       },
       {
         texto:
-          "Cuando usted le está leyendo a su hijo y pone el libro frente a él…¿él puede pasar las hojas del libro con su mano?",
+          "Cuando usted le lee a su hijo y pone el libro frente a él…¿él puede pasar las hojas del libro con su mano?",
         imagen: ["imagenes/6.2.jpg"],
         observacion: "Pasa hojas de un libro",
       },
       {
         texto:
-          "Cuando usted le da de comer a su bebé con una cuchara y deja está a un lado del bebé…¿él es capaz de coger la cuchara y llevársela a la boca?",
+          "Cuando le da de comer con una cuchara y la deja a un lado…¿él es capaz de coger la cuchara y llevársela a la boca?",
         imagen: ["imagenes/6.3.jpg"],
         observacion: "Habilidad para tomar una cuchara",
       },
       {
         texto:
-          "Si usted deja a su bebé sentado en el suelo y lo llama ofreciéndole algún objeto desde arriba de él…¿él es capaz de ponerse de pie sin apoyo?",
+          "Si usted deja a su bebé sentado en el suelo y lo llama desde arriba ofreciéndole un objeto, ¿puede ponerse de pie?",
         imagen: ["imagenes/6.4.jpg"],
         observacion: "Ponerse de pie sin ayuda",
       },
       {
         texto:
-          "Cuando su bebé está de pie y usted le pide que se acerque…¿él es capaz de caminar al menos cuatro o cinco pasos sin perder el equilibrio?",
+          "Cuando su bebé está de pie y usted le pide que se acerque, ¿él es capaz de caminar al menos cuatro o cinco pasos sin caerse?",
         imagen: ["imagenes/6.5.jpg"],
         observacion: "Da pasos sin perder el equilibrio",
       },
       {
         texto:
-          "De acuerdo a la pregunta anterior, mientras el camina sin ayuda…¿Es capaz de alternar las manos y pies conservando el equilibrio?",
+          "Mientras el camina sin ayuda, ¿Es capaz de alternar las manos y pies conservando el equilibrio?",
         imagen: ["imagenes/6.6.jpg"],
         observacion: "Desplazamiento cruzado al dar pasos",
       },
@@ -300,7 +299,7 @@ if (window.location.pathname.endsWith("preguntas.html")) {
       },
       {
         texto:
-          "Cuando usted juega con su hijo a construir torres con cubos…¿él es capaz de al menos hacer una torre de cinco cubos?",
+          "Cuando usted juega con su hijo a construir torres con cubos…¿él es capaz de hacer una torre de cinco cubos?",
         imagen: ["imagenes/7.6.jpg"],
         observacion: "Habilidad de armar torre de cinco cubos",
       },
@@ -308,13 +307,13 @@ if (window.location.pathname.endsWith("preguntas.html")) {
     8: [
       {
         texto:
-          "Cuando su bebé salta…¿Él es capaz de hacerlo despegando la planta de ambos pies sin perder el equilibrio al menos dos veces seguidas?",
+          "Cuando su bebé salta, ¿puede despegar ambos pies del suelo sin perder el equilibrio al menos dos veces seguidas?",
         imagen: ["imagenes/8.1.jpg"],
         observacion: "Capacidad de saltar con los pies juntos",
       },
       {
         texto:
-          "Si su bebé salta…¿Él es capaz de hacerlo despegando la planta de ambos pies sin perder el equilibrio al menos dos veces seguidas?",
+          "Si usted le enseña a su bebé a ponerse en punta de pies, ¿puede levantar ambos talones al mismo tiempo y mantenerse así por al menos 3 segundos?",
         imagen: ["imagenes/8.2.jpg"],
         observacion: "Posición de punta de pies",
       },
@@ -338,7 +337,7 @@ if (window.location.pathname.endsWith("preguntas.html")) {
       },
       {
         texto:
-          "Si usted le da una hoja y un crayón a su bebé y le pide que realice líneas horizontales y verticales enseñándole…¿él es capaz de hacerlas algo rectas?",
+          "Si usted le da a su bebé una hoja y un crayón y le pide que haga líneas horizontales y verticales, ¿puede hacerlas más o menos rectas?",
         imagen: ["imagenes/8.6.jpg"],
         observacion: "Habilidad de realizar líneas rectas",
       },
@@ -358,7 +357,7 @@ if (window.location.pathname.endsWith("preguntas.html")) {
       },
       {
         texto:
-          "¿Su bebé baja escalones…¿él es capaz de bajar al menos dos solo con apoyo de la baranda?",
+          "¿Su bebé puede bajar al menos dos escalones usando solo la baranda para apoyarse?",
         imagen: ["imagenes/9.3.jpg"],
         observacion: "Capacidad de bajar solo al menos dos escalones con apoyo",
       },
