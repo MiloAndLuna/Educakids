@@ -1,20 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const prematuroInputs = document.getElementsByName("prematuro");
-  const prematuroLink = document.getElementById("prematuro-link");
   const edadSection = document.getElementById("edad-section");
   const enviarBtn = document.getElementById("enviar");
-
-  prematuroInputs.forEach((input) => {
-    input.addEventListener("change", () => {
-      if (input.value === "si") {
-        prematuroLink.style.display = "block";
-        edadSection.style.display = "none";
-      } else {
-        prematuroLink.style.display = "none";
-        edadSection.style.display = "block";
-      }
-    });
-  });
 
   enviarBtn.addEventListener("click", () => {
     const edad = document.getElementById("edad").value;
@@ -23,7 +9,6 @@ document.addEventListener("DOMContentLoaded", () => {
     } else if (edad == "") {
       alert("Seleccione una edad para continuar.");
     } else {
-      prematuroLink.style.display = "block";
       edadSection.style.display = "none";
     }
   });
