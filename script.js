@@ -161,7 +161,7 @@ if (window.location.pathname.endsWith("preguntas.html")) {
       {
         texto:
           "Cuando usted le da dos objetos llamativos a su bebé, ¿puede agarrarlos y sostenerlos sin soltarlos por al menos 5 segundos?",
-        imagen: ["imagenes/4.4pg"],
+        imagen: ["imagenes/4.4.jpg"],
         observacion: "Sostén de objetos",
       },
       {
@@ -187,7 +187,7 @@ if (window.location.pathname.endsWith("preguntas.html")) {
       {
         texto:
           "¿Su bebé puede pasar de estar sentado a ponerse de pie usando un objeto cerca?",
-        imagen: ["imagenes/5.2pg"],
+        imagen: ["imagenes/5.2.jpg"],
         observacion: "Adaptarse a la postura de pie",
       },
       {
